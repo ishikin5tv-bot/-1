@@ -2,48 +2,61 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>動画編集ポートフォリオ | いしい</title>
+  <title>動画編集ポートフォリオ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       margin: 0;
-      font-family: system-ui, sans-serif;
-      background: #0a0a0f;
-      color: #f5f5f5;
+      font-family: "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0a0a1a, #000);
+      color: #e0e0ff;
     }
     header {
-      padding: 80px 10vw;
-      background: linear-gradient(135deg, #1e1e2f, #0a0a0f);
+      background: url('hero.jpg') center/cover no-repeat;
       text-align: center;
+      padding: 100px 10vw;
+      color: #fff;
+      text-shadow: 0 0 10px #3b82f6;
     }
     h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
     p {
-      line-height: 1.7;
+      line-height: 1.8;
+      font-size: 16px;
     }
     .btn {
       display: inline-block;
-      padding: 12px 24px;
+      padding: 12px 28px;
       border-radius: 8px;
       text-decoration: none;
       margin: 10px;
+      font-weight: bold;
+      transition: 0.3s;
     }
     .btn-primary {
       background: #3b82f6;
       color: #fff;
+      box-shadow: 0 0 10px #3b82f6;
     }
     .btn-outline {
       border: 1px solid #3b82f6;
       color: #3b82f6;
     }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #60a5fa;
+    }
     section {
-      padding: 60px 10vw;
+      padding: 80px 10vw;
+      backdrop-filter: blur(4px);
     }
     h2 {
-      margin-bottom: 20px;
       font-size: 28px;
+      margin-bottom: 20px;
+      color: #60a5fa;
+      text-shadow: 0 0 8px #3b82f6;
     }
     .grid {
       display: grid;
@@ -53,18 +66,25 @@
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
     .card {
-      background: #14141f;
-      padding: 20px;
+      background: rgba(20, 20, 40, 0.8);
       border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px #1e3a8a;
+      transition: 0.3s;
+    }
+    .card:hover {
+      box-shadow: 0 0 20px #3b82f6;
+      transform: translateY(-5px);
     }
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 40px;
       font-size: 12px;
-      color: #888;
+      color: #9ca3af;
+      border-top: 1px solid #1e3a8a;
     }
     a {
-      color: #3b82f6;
+      color: #60a5fa;
     }
   </style>
 </head>
@@ -72,8 +92,8 @@
 <body>
 
 <header>
-  <h1>動画編集ポートフォリオ</h1>
-  <p>YouTube・ショート動画・PR動画の編集を中心に承っています。</p>
+  <h1>動画編集 × AI活用で「伝わる」をカタチに。</h1>
+  <p>DaVinci Resolve・YMM4・生成AIを活用し、見やすく伝わる映像を制作します。</p>
   <a class="btn btn-primary" href="https://crowdworks.jp/">クラウドワークスから相談する</a>
   <a class="btn btn-outline" href="#works">制作実績を見る</a>
 </header>
@@ -100,38 +120,26 @@
   <h2>制作実績</h2>
   <div class="grid grid-3">
     <div class="card">
-      <h3>解説系YouTube動画</h3>
+      <img src="vlog.jpg" alt="VLOG" style="width:100%; border-radius:8px;">
+      <h3>My Daily Vlog</h3>
       <p>担当：編集・テロップ・BGM</p>
-      <p><a href="#">動画を見る</a></p>
     </div>
     <div class="card">
-      <h3>ショート動画（縦型）</h3>
-      <p>担当：編集・テロップ</p>
-      <p><a href="#">動画を見る</a></p>
-    </div>
-    <div class="card">
-      <h3>サービス紹介動画</h3>
+      <img src="pancake.jpg" alt="Artisan Meals" style="width:100%; border-radius:8px;">
+      <h3>ENJOY HOME TIME</h3>
       <p>担当：編集・構成</p>
-      <p><a href="#">動画を見る</a></p>
+    </div>
+    <div class="card">
+      <img src="otter.jpg" alt="キャラクター" style="width:100%; border-radius:8px;">
+      <h3>キャラクター制作</h3>
+      <p>AIイラストを活用したブランディング素材制作。</p>
     </div>
   </div>
 </section>
 
-<section id="flow">
-  <h2>制作の流れ</h2>
-  <ol>
-    <li>お問い合わせ・ご相談</li>
-    <li>ヒアリング（目的・ターゲット・イメージ）</li>
-    <li>構成案の共有</li>
-    <li>編集・確認</li>
-    <li>修正対応</li>
-    <li>納品</li>
-  </ol>
-</section>
-
 <section id="profile">
   <h2>プロフィール</h2>
-  <p>いしい / 動画編集者</p>
+  <p>動画編集者 / 映像クリエイター</p>
   <p>得意ジャンル：解説系・エンタメ系・ショート動画</p>
   <p>視聴者が最後まで見たくなるテンポと、わかりやすいテロップを意識して編集しています。</p>
 </section>
@@ -146,7 +154,7 @@
 </section>
 
 <footer>
-  &copy; いしい - 動画編集ポートフォリオ
+  &copy; 動画編集ポートフォリオ
 </footer>
 
 </body>
